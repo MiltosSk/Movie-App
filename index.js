@@ -26,11 +26,19 @@ let getMovie = () =>{
                             </div>
                             <div class="details">
                                 <span>${data.Rated}</span>
-                                <span>${data.Rated}</span>
-                                <span>${data.Rated}</span>
+                                <span>${data.Year}</span>
+                                <span>${data.Runtime}</span>
+                            </div>
+                            <div class="genre">
+                                <div>${data.Genre.split(",").join("</div><div>")}</div>
+                            </div>
                         </div>
+                        <h3>Plot:</h3>
+                        <p>${data.Plot}</p>
+                        <h3>Cast:</h3>
+                        <p>${data.Actors}</p>
                     </div>
-                `
+                `;
             }
         })
     }
