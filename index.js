@@ -40,6 +40,14 @@ let getMovie = () =>{
                     </div>
                 `;
             }
+
+            else{
+                result.innerHTML = `<h3 class="msg">${data.Error}</h3>`;
+            }
         })
+
+            .catch(() => {
+                result.innerHTML = `<h3 class="msg">Error Occured</h3>`;
+            });
     }
-}
+};
